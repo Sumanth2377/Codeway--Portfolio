@@ -1,0 +1,617 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* navbar styling ------start-----*/
+.hero {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    height: 4%;
+    width: 9%;
+
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 23px 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+nav ul li a {
+    margin: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.1rem;
+}
+
+nav li a:hover {
+    color: rgb(20, 246, 144);
+    animation-delay: 3s;
+}
+
+nav .hire {
+    border: 5px solid rgb(159, 14, 14);
+    padding: 10px 22px;
+    border-radius: 8px;
+}
+
+nav .fa-icon {
+    size: 2rem;
+    color: rgb(23, 56, 243);
+}
+
+/* navbar styling ------end----- */
+
+/* home element styling -----start----- */
+.detail {
+    margin-left: 8%;
+    margin-top: 15%;
+
+}
+
+.detail h1 {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+span {
+    color: rgb(18, 17, 17);
+}
+
+.detail p {
+    color: rgb(85, 87, 89);
+    line-height: 20px;
+}
+
+.detail a {
+    background-color: rgb(9, 9, 9);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.detail a:hover {
+    background-color: rgb(183, 178, 178);
+    color: black;
+
+}
+
+/* background images setup */
+.hero::before {
+    content: "";
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmc58708lwvDyGifBsTKmEyvbeGVqANq2INg&usqp=CAU) no-repeat center center/cover;
+    position: absolute;
+    height: 115%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5px;
+}
+
+.home-images {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0;
+    right: 100px;
+}
+
+.home-images .img-1 {
+    width: 35vw;
+    height: 20rem;
+    margin-left: 7em;
+    margin-top: 6rem;
+    border: 5px solid rgb(27, 203, 57);
+    border-radius: 4em;
+    box-shadow: 10px 10px 1rem rgb(26, 112, 232);
+}
+
+/* .home-images .img-2{
+    position: absolute;
+    width: 35vw;
+    height: 20rem;
+    margin-left: 2em;
+    margin-top: 6rem;
+    border: 4px solid gold;
+    border-radius: 4em;
+    box-shadow: 10px 10px 2rem gold;
+} */
+
+
+/* .images:hover .shape{
+    bottom: 40px;
+}
+.images:hover .girl{
+    left: 45px;
+} */
+/* home element styling -----end----- */
+
+
+
+
+
+
+/* ------about-section------- */
+#about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-image img {
+    width: 35vw;
+    margin-left: 7em;
+    margin-top: 12rem;
+    border: 2px solid rgb(244, 24, 24);
+    border-radius: 4em;
+    box-shadow: 7px 7px 9px rgb(87, 87, 84);
+}
+
+/* h2 */
+.heading {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-top: 8rem;
+    /* line-height: 1.2; */
+}
+
+.about-content h3 {
+    font-size: 1.9rem;
+    margin: 7px;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    margin: 1.5rem 1rem;
+}
+
+#about-section .btn {
+    background-color: rgb(4, 165, 240);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#about-section .btn:hover {
+    background-color: rgb(183, 178, 178);
+    color: rgb(58, 57, 57);
+    /* box-shadow: 3px 3px 6px gold; */
+
+}
+
+/* -------about-section----- */
+
+
+
+
+/* -------skill section------ */
+.skills {
+    background-color: rgb(80, 80, 79);
+}
+
+#skill-section .heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.skill-left .skill-bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0, 10px;
+}
+
+.skill-left .skill-bar .bar {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(94, 93, 91);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+.skill-right .skill-bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0, 10px;
+}
+.skill-right .skill-bar .bar {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(198, 197, 194);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(16, 212, 189);
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px rgb(10, 224, 221);
+}
+
+.skill-bar .bar .html {
+    width: 76%;
+    animation: html 2s;
+}
+
+.skill-bar .bar .css {
+    width: 66%;
+    animation: css 3s;
+}
+
+.skill-bar .bar .javascript {
+    width: 40%;
+    animation: javascript 4s;
+}
+
+.skill-bar .bar .python {
+    width: 30%;
+}
+
+.skill-bar .bar .java {
+    width: 66%;
+}
+
+.skill-bar .bar .c {
+    width: 45%;
+    animation: c 5s;
+}
+
+/* -----skill right--- */
+.professional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.skill-bar .bar .tw {
+    width: 65%;
+    animation: c 3s;
+}
+.skill-bar .bar .tm {
+    width: 82%;
+    animation: c 3s;
+}
+.skill-bar .bar .pc {
+    width: 63%;
+    animation: c 4s;
+}
+.skill-bar .bar .cr {
+    width: 90%;
+    animation: c 2s;
+}
+/* 
+.box {
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 1.5rem;
+}
+
+.box .text {
+    text-align: center;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.box .text big {
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+
+.box .text small {
+    display: block;
+    font-weight: 600;
+}
+
+.circle {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gold;
+}
+
+.circle .points {
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    border-radius: 2px;
+    background-color: gold;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+} */
+
+
+
+
+/* -------skill section------- */
+
+/* --------service section ---- */
+/* --------service section */
+
+
+/* ------portfolio------------------------------------  */
+.portfolio .heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.filter-buttons {
+    margin: 2rem;
+    text-align: center;
+}
+
+.filter-buttons .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+}
+.filter-buttons .btn:hover{
+    color: gold;
+}
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-gap: 2rem;
+}
+.port-box{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgb(156, 153, 153);
+    display: flex;
+    grid-template-rows: 1fr auto ;
+    border: 2px solid gold;
+    box-shadow: 3px 3px 5px rgb(228, 244, 7);
+}
+.port-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.port-image img{
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    transition: .5s;
+}
+.port-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(rgb(0,0,0,.2),rgb(233, 206, 57));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: .5s;
+    padding: 0 .2rem;
+    display: flex;
+}
+.port-box:hover .port-content{
+    opacity: 1;
+}
+.port-content h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+.port-content p{
+    font-size: .8rem;
+    margin: 5px 0 15px 0;
+    
+}
+/* -------portfolio-------  */
+
+
+
+
+/* ---------- review section-------- */
+/* ------- review section -------- */
+
+
+/* -------contact section-------- */
+
+/* #contact::before{
+    content: "";
+    background: url(https://tse1.mm.bing.net/th?id=OIP.VdBJVwZXp-38IIdA0N-BPAHaDa&pid=Api&rs=1&c=1&qlt=95&w=239&h=110)no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+} */
+#contact .heading,h4{
+    text-align: center;
+}
+.contact h4{
+    margin: 1.5rem 0;
+}
+.contact-form {
+    /* border: 2px solid gold; */
+    background-color: rgb(241, 240, 240);
+    padding: 23px;
+    margin: 12px;
+}
+.contact .btn2 {
+    background-color: gold;
+    font-weight: bold;
+    padding: 10px 55px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 23px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.contact .btn2:hover {
+    background-color: rgb(183, 178, 178);
+    color: rgb(58, 57, 57);
+    /* box-shadow: 3px 3px 6px gold; */
+
+}
+.contact-form .form-group{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form .form-group input{
+    padding: 10px 7rem;
+    margin: 10px 23px;
+    border-radius: .6rem;
+}
+.contact-form .form-group #message{
+    padding: 40px 7rem;
+}
+.contact-form .form-group label{
+    margin: 7px 2rem;
+}
+
+
+
+/* .contact-text h4 {
+    margin: 18px 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: burlywood;
+}
+
+.contact-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+} */
+
+/* -------contact section-------- */
+
+
+
+
+
+/* skill left */
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 76%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes c {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+
+
+@keyframes glow {
+    0% {
+        background-color: gold;
+        box-shadow: none;
+    }
+
+    100% {
+        background-color: gold;
+        box-shadow: 3px 3px 5px rgb(221, 243, 18);
+    }
+}
